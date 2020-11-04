@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUMP and DUCK</title>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            
+            
+        }
+        .container{
+            margin: 100px 100px;
+            position: relative;
+            width: fit-content;
+            width: 900px;
+            height: 300px;
+        }
+ 
+        #btn{
+            font-size: 30px;
+            font-family: "Consolas";
+            padding: 50px;
+            background-color: white;
+            border: 5px solid black;
+            
+        }
+        #btn{
+            display: block  ;
+            position: absolute;
+            top: 120px;
+            left: 200px;
+            transition: 0.5s;
+        }
+        #btn:hover{
+            background-color: rgb(196, 191, 191);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+        </div>
+        <a href="game.html" id="starGame">
+             <button id="btn">Click here to START</button>
+        </a>
+    </div>
+    
+</body>
+</html>

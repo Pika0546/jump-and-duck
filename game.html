@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUMP and DUCK</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            
+            
+        }
+        .container{
+            margin: 100px 100px;
+            position: relative;
+            width: fit-content;
+        }
+        canvas{
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+        #score{
+            position: absolute;
+            font-size: 30px;
+            border: 5px solid black;
+            padding:10px ;
+            font-family: 'Consolas';
+        }
+        #high-score{
+            position: absolute;
+            right: 0;
+            font-size: 30px;
+            border: 5px solid black;
+            padding:10px ;
+            font-family: 'Consolas';
+        }
+        #re-btn{
+            position: absolute;
+            display: none;
+            left: 40%;
+            font-size: 30px;
+            border: 5px solid black;
+            padding:10px ;
+            font-family: 'Consolas';
+            background-color: white;
+        }
+        #re-btn:hover{
+            cursor: pointer;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myCanvas" width="900" height="300" style="border: 5px solid black;"></canvas>
+        <div id="score"></div>
+        <div id="high-score"></div>
+        <button id="re-btn" onmousedown="initEverthing();">RESTART</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
