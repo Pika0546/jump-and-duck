@@ -1,1 +1,1 @@
-# jump-and-ducl
+# jump-and-duck
